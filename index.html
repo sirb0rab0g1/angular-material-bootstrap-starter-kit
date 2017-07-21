@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AngularJS Starterkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1 ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic"> 
+</head>
+<body>
+	
+
+    <!-- Required libraries -->
+    <script src="libs/angular-material1.5.5/angular.min.js"></script>
+    <script src="libs/angular-material1.5.5/angular-animate.min.js"></script>
+    <script src="libs/angular-material1.5.5/angular-aria.min.js"></script>
+    <script src="libs/angular-material1.5.5/angular-messages.min.js"></script>
+    <script src="libs/angular/angular-route.min.js"></script>
+
+    <!-- Angular Material -->
+    <link rel="stylesheet" href="libs/angular-material1.5.5/angular-material.min.css">
+    <script src="libs/angular-material1.5.5/angular-material.min.js"></script>
+
+    <!--bootstap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+    <!-- Services -->
+    <!-- TODO: Add services here -->
+
+    <!-- Directives -->
+    <!-- TODO: Add directives here -->
+
+    <!-- Components -->
+    <link rel="stylesheet" href="app/components/success/css/success.css">
+    <script src="app/components/success/module.js"></script>
+    <script src="app/components/success/success.js"></script>
+
+    <!-- Startup code -->
+    <script src="app/app.js"></script>
+    <script src="app/routes.js"></script>
+
+    <script>
+        /* Wait for all resources to be downloaded */
+        angular
+            .element(document)
+            .ready(function() {
+                /* Start the angular app */
+                angular.bootstrap(document, ['ngStarterKit']);
+            });
+    </script>
+	
+	<div ng-view></div>
+</body>
+</html>
